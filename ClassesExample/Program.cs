@@ -7,11 +7,11 @@ namespace ClassesExample
     {
         static void Main(string[] args)
         {
-            var chicken = new Chicken();
+            var chicken = new Chicken("Liza");
+            var bob = new Chicken("Bob");
 
-            chicken.Name = "Liza";
-
-            chicken.Peck("Corn");
+            chicken.Peck("corn");
+            bob.Peck("watermelon");
         }
     }
 }

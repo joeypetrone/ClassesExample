@@ -14,9 +14,10 @@ namespace ClassesExample.Animals
         //public Chicken() { }
 
         //constructor
-        public Chicken()
+        public Chicken(string name)
         {
-            Console.WriteLine("Chicken got instantiated...");
+            Name = name;
+            Console.WriteLine($"{name} got instantiated...");
         }
 
         //method (signature = accessibility modifier -> return type -> Name -> Parameters
