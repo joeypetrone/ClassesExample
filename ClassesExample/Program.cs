@@ -11,7 +11,10 @@ namespace ClassesExample
             var bob = new Chicken("Bob");
 
             chicken.Peck("corn");
+            chicken.Peck("corn");
             bob.Peck("watermelon");
+
+            Console.WriteLine($"{chicken.Name} and {bob.Name} are chickens.......");
         }
     }
 }

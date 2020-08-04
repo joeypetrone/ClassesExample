@@ -9,6 +9,8 @@ namespace ClassesExample.Animals
         //property
         public string Name { get; set; }
 
+        //field
+        private bool _isHungry = true;
 
         //default constructor
         //public Chicken() { }
@@ -23,7 +25,15 @@ namespace ClassesExample.Animals
         //method (signature = accessibility modifier -> return type -> Name -> Parameters
         public void Peck(string typeOfFood)
         {
-            Console.WriteLine($"{Name} pecks hungrily at the {typeOfFood}.");
+            if (_isHungry)
+            {
+                Console.WriteLine($"{Name} pecks hungrily at the {typeOfFood}.");
+                _isHungry = false;
+            }
+            else
+            {
+                Console.WriteLine($"{Name} is not hungry.");
+            }
         }
     }
 }
