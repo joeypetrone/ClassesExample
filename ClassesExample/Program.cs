@@ -15,6 +15,9 @@ namespace ClassesExample
             bob.Peck("watermelon");
 
             Console.WriteLine($"{chicken.Name} and {bob.Name} are chickens.......");
+
+            var llama = new Llama(3, "brown");
+            llama.Dye("Blue");
         }
     }
 }
