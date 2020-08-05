@@ -16,8 +16,27 @@ namespace ClassesExample
 
             Console.WriteLine($"{chicken.Name} and {bob.Name} are chickens.......");
 
-            var llama = new Llama(3, "brown");
+            var llama = new Llama(3, "brown")
+            {
+                Spits = true
+            };
+
             llama.Dye("Blue");
+
+            //object initializer
+            var cat = new Cat()
+            {
+                IsFeral = true,
+                Color = CatColor.Tabby,
+                BestFriend = bob
+            };
+
+            cat.Color = CatColor.Tabby;
+            cat.BestFriend = bob;
+
+            cat.HaveASnack();
+
+            Console.WriteLine($"The {cat.Color} cat is playing with a toy.");
         }
     }
 }
